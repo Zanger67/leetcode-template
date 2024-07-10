@@ -4,7 +4,7 @@
 By default, this will generate markdowns for each question you have a solution for only when it's newly created or there's been a change (to avoid redundant processes). If you want to reprocess the entire set of markdown files, add the `-r` flag to the python call.
 
 ```powershell
-python .readme_updater/main.p   y -r
+python .readme_updater/main.py -r
 ```
 
 ## Important
@@ -24,16 +24,20 @@ git clone --recursive https://github.com/Zanger67/leetcode-template.git
 ```
 
 4. Modify the values in the `.env.sample` file according to your needs and rename it to `.env`.
+
 *Note: the checker will prioritize the .env that's present in the main directory over the Leetcode-Progress-Tracker directory.*
+
 5. Place all your solutions in the `my-submissions` folder.
 
-All set! To generate a markdown, either navigate to and run `main.ipynb` in the submodule (`.readme_updater`) or run `main.py` from anywhere.
+All set! To generate a markdown, either run either `main.py` or `main.ipynb`.
 
 ```powershell
 python .readme_updater/main.py
 ```
 
 ### Option 2 - Submodule
+
+As long as you adjust `.env` accordingly, there should be no issue. `main.py` uses relative pathing to export the markdown files.
 
 You can import the `.readme_updater` repo as a submodule into your own location if you wish.
 
@@ -47,3 +51,9 @@ git submodule add https://github.com/Zanger67/Leetcode-Progress-Tracker.git .rea
 `.readme_updater` at the end can be replaced with whatever directory name you wish to host the scripts.
 
 3. Configure the `.env.sample` found inside the submodule folder (`.readme_updater` folder)
+
+All set! To generate a markdown, either run either `main.py` or `main.ipynb`.
+
+```powershell
+python .readme_updater/main.py
+```
