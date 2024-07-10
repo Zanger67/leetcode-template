@@ -20,7 +20,7 @@ Make sure to modify the `.env` file. Edit the one in this main folder called `.e
 3. Clone the repo (***make sure to have the `--recursive` tag in order to bring in the submodule as well***):
 
 ```powershell
-git clone --recursive ___
+git clone --recursive https://github.com/Zanger67/leetcode-template.git
 ```
 
 4. Modify the values in the `.env.sample` file according to your needs and rename it to `.env`.
