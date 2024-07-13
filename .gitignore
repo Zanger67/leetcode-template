@@ -1,4 +1,6 @@
 .vscode/
 __pycache__/
 
-.env
+
+# Since no sensitive data is here, I commented this out for template/sample purposes
+# .env
