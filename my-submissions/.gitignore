@@ -1,1 +1,5 @@
-# This file exists solely so that this folder will appear
+# Ignores all cache files and cache directories
+.*
+_*
+
+!.gitignore
